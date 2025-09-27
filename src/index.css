@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cosmic Nebula Background System */
+    --background: 230 45% 8%;
+    --foreground: 20 100% 95%;
+
+    /* Card System - Nebula Glass */
+    --card: 240 40% 12%;
+    --card-foreground: 20 100% 95%;
+    --card-glow: 320 60% 65%;
+
+    /* Popover System */
+    --popover: 240 40% 12%;
+    --popover-foreground: 20 100% 95%;
+
+    /* Primary Nebula System - Cosmic Coral */
+    --primary: 350 70% 70%;
+    --primary-foreground: 230 45% 8%;
+    --primary-glow: 10 80% 75%;
+
+    /* Secondary System - Deep Violet */
+    --secondary: 280 50% 35%;
+    --secondary-foreground: 20 100% 95%;
+
+    /* Muted System - Nebula Purple */
+    --muted: 260 35% 20%;
+    --muted-foreground: 320 40% 75%;
+
+    /* Accent System - Peach Glow */
+    --accent: 20 85% 80%;
+    --accent-foreground: 230 45% 8%;
+
+    /* Destructive System */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 20 100% 95%;
+
+    /* Border & Input System */
+    --border: 280 40% 25%;
+    --input: 260 35% 15%;
+    --ring: 350 70% 70%;
+
+    /* Cosmic Nebula Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(230 45% 8%), hsl(260 35% 20%));
+    --gradient-nebula: linear-gradient(135deg, hsl(350 70% 70%), hsl(10 80% 75%));
+    --gradient-prism: linear-gradient(135deg, hsl(280 50% 35%), hsl(320 60% 65%), hsl(350 70% 70%));
+    --gradient-constellation: linear-gradient(135deg, hsl(230 45% 8%), hsl(280 50% 35%), hsl(320 60% 65%));
+    --gradient-aurora: linear-gradient(135deg, hsl(260 35% 20%), hsl(320 60% 65%), hsl(20 85% 80%));
+
+    /* Cosmic Nebula Shadows & Glows */
+    --shadow-cosmic: 0 20px 40px -10px hsl(230 45% 5% / 0.8);
+    --glow-primary: 0 0 30px hsl(350 70% 70% / 0.4);
+    --glow-nebula: 0 0 40px hsl(10 80% 75% / 0.3);
+    --glow-prism: 0 0 50px hsl(320 60% 65% / 0.6);
+    --glow-aurora: 0 0 60px hsl(20 85% 80% / 0.4);
+
+    /* Animation Variables */
+    --transition-cosmic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s ease-in-out;
+
+    --radius: 0.75rem;
+  }
+
+  /* Dark mode optimizations (cosmic nebula theme is naturally dark) */
+  .dark {
+    --background: 230 45% 6%;
+    --card: 240 40% 10%;
+    --primary-glow: 10 80% 80%;
+    --glow-primary: 0 0 40px hsl(350 70% 70% / 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
