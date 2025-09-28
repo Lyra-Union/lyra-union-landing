@@ -1,7 +1,5 @@
 # Lyra-Union: The Decentralized Cooperative
 
-**_Rooted in Mythical Truths. Powered by Verified Trust._**
-
 ---
 
 ## 1. Overview
@@ -41,19 +39,19 @@ Our architecture is founded on a clear separation of governance, utility, and ca
 
 ### SPARK - The Utility Token
 
--   **Type**: ERC-20 token on Aurora [24, 38].
--   **Purpose**: The primary **medium of exchange** within the cooperative. Used for community rewards, staking, and purchasing SHLD tokens [24, 39].
--   **Mechanics**: FYRE exists in two states:
+-   **Type**: ERC-20 token on Ethereum [24, 38].
+-   **Purpose**: The primary **medium of exchange** within the cooperative. Used for community rewards, staking, and purchasing PRISM tokens [24, 39].
+-   **Mechanics**: SPARK exists in two states:
     1.  **Uncollateralized**: Freely transferable for general cooperative transactions [40, 41].
-    2.  **Collateralized**: Backed by BTC via Verus integration. Only collateralized FYRE can be used to purchase SHLD or be contributed to the cooperative as MANA [24, 41, 42].
+    2.  **Collateralized**: Backed by BTC via Verus integration. Only collateralized SPARK can be used to purchase SHLD or be contributed to the cooperative as AXIS [24, 41, 42].
 
 ### AXIS - The Labor Capital Token
 
--   **Type**: A token with a dual lifecycle: starts as a standard **ERC-20 (`mana`)** and transitions into a restricted **ERC-1400 (`MANA`)** on Aurora [25, 43].
+-   **Type**: A token with a dual lifecycle: starts as a standard **ERC-20 (`mana`)** and transitions into a restricted **ERC-1400 (`AXIS`)** on Ethereum [25, 43].
 -   **Purpose**: Represents **contributed labor capital** and determines governance weight [44-46].
 -   **Mechanics**:
     -   `axis` (ERC-20): A freely transferable token for speculative labor contributions and payments [25, 47].
-    -   `AXIS` (ERC-1400): When `axis` is formally contributed to the cooperative, it becomes a restricted token with governance rights. Transfers of AXIS are overseen by the cooperative [44, 47]. A member's voting power is proportional to the total value of their MANA holdings [12, 48].
+    -   `AXIS` (ERC-1400): When `axis` is formally contributed to the cooperative, it becomes a restricted token with governance rights. Transfers of AXIS are overseen by the cooperative [44, 47]. A member's voting power is proportional to the total value of their AXIS holdings [12, 48].
 
 ## 5. Governance Model: A Custom SputnikDAO
 
@@ -65,7 +63,7 @@ Our governance system is built on a customized version of **HederaioDAO** on Hed
 -   **Value-Based Weighted Voting**: Our system moves beyond "one token, one vote."
     -   For **general governance**, voting is uniform: one SHLD holder gets one vote [53].
     -   For **project-specific proposals**, voting power is weighted and proportional to the **total market value of a member's MANA holdings** [12, 53, 54].
--   **Cross-Chain Voting Power**: To calculate project-specific voting power, our custom **Voting/Contribution Module** on NEAR performs a cross-chain query via the **Aurora Bridge** to fetch a member's MANA balance from Aurora [55, 56].
+-   **Cross-Chain Voting Power**: To calculate project-specific voting power, our custom **Voting/Contribution Module** on NEAR performs a cross-chain query via the **Aurora Bridge** to fetch a member's AXIS balance from Aurora [55, 56].
 
 ## 6. The `axis` Hour to `AXIS` Token Conversion Algorithm
 
