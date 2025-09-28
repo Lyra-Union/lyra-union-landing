@@ -87,52 +87,18 @@ Valuing labor fairly is a cornerstone of SagaHalla. We've developed a unique, ga
 
 This repository contains the work completed during the hackathon, which includes:
 
--   **Smart Contracts**: Implementation of the `FYRE` (ERC-20), `MANA` (ERC-20/1400), and `SHLD` (NEAR NFT) token contracts [66].
+-   **Smart Contracts**: Implementation of the `SPARK` (ERC-20), `AXIS` (ERC-20/1400), and `PRISM` (NEAR NFT) token contracts [66].
 -   **MANA Governance System**: A DApp for contribution-weighted voting on global and project-specific proposals [48, 54].
--   **Effort Tracking System**: A DApp for logging `mana` hours against tasks and roles, with all proofs of work logged on-chain [15, 62, 67].
+-   **Effort Tracking System**: A DApp for logging `axis` hours against tasks and roles, with all proofs of work logged on-chain [15, 62, 67].
 -   **VicTory Exchange Simulation**: A functional frontend for simulating the purchase of FYRE and SHLD, and the contribution/conversion of MANA [65, 68].
 
 ## 9. Post-Hackathon Roadmap
 
 The journey continues after the hackathon. Our key priorities include:
 
--   **Full Verus Integration**: Linking **SHLD** to **Verus ID** for sovereign identity and moving token minting and treasury management to Verus [29, 69, 70].
+-   **Full World Integration**: Linking **SHLD** to **Verus ID** for sovereign identity and moving token minting and treasury management to Verus [29, 69, 70].
 -   **Mainnet Deployment**: Migrating all contracts and DApps from testnet to mainnet.
--   **Proof System Algorithm**: Finalizing the algorithmic conversion of `mana` effort hours to `mana`/`MANA` tokens [69].
+-   **Proof System Algorithm**: Finalizing the algorithmic conversion of `axis` effort hours to `axis`/`AXIS` tokens [69].
 -   **Expanded DApp Functionality**: Building out developer and community portals and integrating advanced features like ML-based risk models for cash flow projections [69].
-
-## 10. Getting Started
-
-_(This is a conceptual project. The following steps are illustrative.)_
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-org/sagahalla.git
-    cd sagahalla
-    ```
-2.  **Install dependencies:**
-    ```bash
-    # For frontend DApps
-    cd apps/dapp && npm install
-
-    # For smart contracts
-    cd contracts/fyre && npm install
-    ```
-3.  **Run tests:**
-    ```bash
-    # Run contract tests
-    cd contracts/mana && npx hardhat test
-    ```
-
-## 11. Contributing
-
-We welcome contributions from the community! Please see our `CONTRIBUTING.md` file for guidelines on how to submit pull requests, report issues, and suggest features.
-
-## 12. Partners
-
--   **Procept Partners**: Providing real-world use cases and industry expertise in the pharma and med-tech sectors [3].
--   **Verus**: Powering our cross-chain identity and BTC collateralization infrastructure [27, 29].
-
-## 13. License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
