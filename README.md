@@ -13,7 +13,7 @@ Our primary mission is to provide a **single, immutable source of truth** for al
 ## 2. Core Features
 
 -   **Decentralized Cooperative Model**: Combines the strengths of a DAO with the legal compliance and accountability of a traditional cooperative [4].
--   **Three-Token Ecosystem**: A sophisticated separation of concerns between **Identity (SHLD)**, **Labor Capital (MANA)**, and **Utility (FYRE)** [9, 10].
+-   **Three-Token Ecosystem**: A sophisticated separation of concerns between **Identity (PRISM)**, **Labor Capital (AXIS)**, and **Utility (SPARK)** [9, 10].
 -   **Value-Based Governance**: A novel voting system where power is proportional not to token count, but to the **total market value of a member's contributions** (Labor + Collateral + Market Utility) [11-13].
 -   **Verifiable Project Execution**: Integration with agile project management tools like **Open Project** to document every task, milestone, and deliverable immutably on the blockchain [3, 14, 15].
 -   **Fair Labor Valuation**: A game-theory-based algorithm for converting hours worked into tokens, featuring a **360-degree blind peer evaluation** and a **boosted reward pool** to incentivize honest feedback [16-19].
@@ -22,7 +22,7 @@ Our primary mission is to provide a **single, immutable source of truth** for al
 
 Lyra Union is built on a multi-chain architecture to use the best tool for each job:
 
--   **NEAR Protocol (Business Logic Layer)**: Hosts our core governance contracts. We use a customized fork of the battle-tested **SputnikDAO** framework to manage proposals and voting [22]. The **SHLD** identity NFT is also a NEAR-native token [23].
+-   **NEAR Protocol (Business Logic Layer)**: Hosts our core governance contracts. We use a customized fork of the battle-tested **SputnikDAO** framework to manage proposals and voting [22]. The **SHLD** identity NFT is also a Hedera-native token [23].
 -   **Aurora (Execution Layer)**: As an EVM-compatible network, Aurora is home to our ERC-20 **FYRE** token and our dual-standard `axis`/`AXIS` (ERC-20/ERC-1400) token. This allows us to tap into the Ethereum ecosystem's tooling and liquidity [24, 25].
 -   **Verus (Value & Identity Layer)**: Integrated for two critical functions:
     1.  **BTC Collateralization**: Our SPARK and AXIS tokens are backed by tBTC.
